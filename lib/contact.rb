@@ -1,10 +1,8 @@
 require "contact/engine"
 
 module Contact
-  class << self
-    mattr_accessor :to_email
-    self.to_email = "user@example.com"
-  end
+  mattr_accessor :to_email
+  @@to_email = "user@example.com"
 
   def self.configure(&block)
     yield self
