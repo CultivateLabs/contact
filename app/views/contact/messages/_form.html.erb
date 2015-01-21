@@ -1,6 +1,7 @@
-<div id="contact-form-success" style="display: none;">
-  Success
-</div>
-<div id="contact-form-container">
-  <%= render 'contact/messages/fields' %>
-</div>
+<%= simple_form_for (@message || Contact::Message.new), html: { novalidate: true }, url: contact.messages_path, remote: true do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, label: "Your name" %>
+  <%= f.input :email, label: "Your email" %>
+  <%= f.input :content, as: :text, label: "Message" %>
+  <%= f.submit "Send Message", class: "btn btn-outline btn-outline-teal inverse" %>
+<% end %>
