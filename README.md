@@ -8,11 +8,13 @@ Mount the engine in your routes file:
 
 `mount Contact::Engine, at: "/"`
 
-And add an initializer in `config/initializers` to set where the contact form emails will be sent:
+And add an initializer in `config/initializers` to set some details for the mailer:
 
 ```
 Contact.configure do |config|
   config.to_email = "to@example.com"
+  config.from_email = "from@example.com"
+  config.subject = "New Contact Form Submission"
 end
 ```
 
