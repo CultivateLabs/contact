@@ -7,11 +7,11 @@ require "contact/version"
 Gem::Specification.new do |s|
   s.name        = "contact"
   s.version     = Contact::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Contact."
-  s.description = "TODO: Description of Contact."
+  s.authors     = ["David Van Der Beek"]
+  s.email       = ["david@flyoverworks.com"]
+  s.homepage    = "https://github.com/flyoverworks/contact"
+  s.summary     = "Easily add a contact page with working form to your Rails app."
+  s.description = "Easily add a contact page with working form to your Rails app."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
