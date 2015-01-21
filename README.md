@@ -2,7 +2,7 @@
 
 A simple contact form engine. Just add the following to your gemfile:
 
-`gem 'contact', github: 'flyoverworks/contact'`
+`gem 'flyover-contact'`
 
 Mount the engine in your routes file:
 

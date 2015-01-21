@@ -1,4 +1,3 @@
 Rails.application.routes.draw do
-
-  mount Contact::Engine => "/contact"
+  mount Contact::Engine => "/"
 end
