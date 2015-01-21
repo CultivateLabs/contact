@@ -1,0 +1,7 @@
+<% if @message.errors.any? %>
+  $("#contact-form-container").html("<%= j render 'contact/messages/fields' %>");
+<% else %>
+  $("#contact-form-success").show().delay(5000).fadeOut();
+  <% @message = Contact::Message.new %>
+  $("#contact-form-container").html("<%= j render 'contact/messages/fields' %>");
+<% end %>

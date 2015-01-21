@@ -1,9 +1,3 @@
 <div class="container">
-  <%= simple_form_for @message do |f| %>
-    <%= f.error_notification %>
-    <%= f.input :name, label: "Your name" %>
-    <%= f.input :email, label: "Your email" %>
-    <%= f.input :content, as: :text, label: "Message" %>
-    <%= f.submit "Send Message", class: "btn btn-primary" %>
-  <% end %>
+  <%= render "form" %>
 </div>

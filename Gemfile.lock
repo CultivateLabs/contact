@@ -36,9 +36,20 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
     builder (3.2.2)
+    coffee-rails (4.1.0)
+      coffee-script (>= 2.2.0)
+      railties (>= 4.0.0, < 5.0)
+    coffee-script (2.3.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.8.0)
     erubis (2.7.0)
+    execjs (2.2.2)
     hike (1.2.3)
     i18n (0.7.0)
+    jquery-rails (3.1.2)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
     json (1.8.2)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
@@ -64,6 +75,12 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
+    sass (3.2.19)
+    sass-rails (4.0.5)
+      railties (>= 4.0.0, < 5.0)
+      sass (~> 3.2.2)
+      sprockets (~> 2.8, < 3.0)
+      sprockets-rails (~> 2.0)
     simple_form (3.1.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
@@ -87,5 +104,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coffee-rails
   flyover-contact!
+  jquery-rails
+  sass-rails (~> 4.0.3)
   sqlite3

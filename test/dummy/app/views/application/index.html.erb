@@ -1,0 +1,7 @@
+<h3>Home</h3>
+
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
+<%= render 'contact/messages/form' %>
