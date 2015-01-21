@@ -5,7 +5,7 @@ require "contact/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "contact"
+  s.name        = "flyover-contact"
   s.version     = Contact::VERSION
   s.authors     = ["David Van Der Beek"]
   s.email       = ["david@flyoverworks.com"]
