@@ -16,6 +16,7 @@ Contact.configure do |config|
   config.subject = "New Contact Form Submission"
   config.success_message = "Success! Your message has been sent and we'll get back to you as soon as possible."
   config.base_controller = "::ApplicationController"
+  config.contact_page_path = "contact"
 end
 ```
 
