@@ -1,4 +1,4 @@
 module Contact
-  class ApplicationController < ::ApplicationController
+  class ApplicationController < Contact.base_controller
   end
 end
