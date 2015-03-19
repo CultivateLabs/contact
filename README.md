@@ -13,7 +13,6 @@ And add an initializer in `config/initializers` to set some details for the mail
 ```
 Contact.configure do |config|
   config.to_email = "to@example.com"
-  config.from_email = "from@example.com"
   config.subject = "New Contact Form Submission"
   config.success_message = "Success! Your message has been sent and we'll get back to you as soon as possible."
   config.base_controller = "::ApplicationController"
