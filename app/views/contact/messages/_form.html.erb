@@ -1,6 +1,4 @@
-<% form = nil if local_assigns[:form].nil? %>
-
-<%= simple_form_for form_object(form, (@message || Contact::Message.new)), html: { novalidate: true }, remote: true do |f| %>
+<%= simple_form_for form_object(form, (@message || Contact::Message.new)), url: form_url(form), html: { novalidate: true }, remote: true do |f| %>
   <%= f.error_notification %>
   <%= f.input :name, label: "Your name" %>
   <%= f.input :email, label: "Your email" %>

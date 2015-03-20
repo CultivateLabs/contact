@@ -1,6 +1,8 @@
+<% form = nil if local_assigns[:form].nil? %>
+
 <div id="contact-form-success" style="display: none;">
   <%= Contact.success_message %>
 </div>
 <div id="contact-form-container">
-  <%= render 'contact/messages/form' %>
+  <%= render 'contact/messages/form', form: form %>
 </div>
