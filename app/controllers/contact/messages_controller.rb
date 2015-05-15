@@ -2,7 +2,6 @@ require_dependency "contact/application_controller"
 
 module Contact
   class MessagesController < ApplicationController
-    layout "application"
     respond_to :js, only: :create
     before_action :load_message, only: :create
 
